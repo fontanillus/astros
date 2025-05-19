@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema solar</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <h1>El Sistema solar</h1>
+    <button onclick="acercaDeSistema()">Acerca de Sistema</button> <button onclick="terminar()">Terminar</button>
+    <hr>
+    <h2>Seleccione el astro deseado</h2>
+    <form>
+        <div class="container">
+            <aside>
+                <select onchange="mostrarAstros()" id="astros" size="14">
+                    <option value="./img/sol.jpg">Sol</option>
+                    <option value="./img/mercurio.jpg">Mercurio</option>
+                    <option value="./img/venus.jpg">Venus</option>
+                    <option value="./img/tierra.jpg">La Tierra</option>
+                    <option value="./img/img/marte.jpg">Marte</option>
+                    <option value="./img/asteroide.jpg">Asteroides</option>
+                    <option value="./img/jupiter.jpg">Jupiter</option>
+                    <option value="./img/saturno.jpg">Saturno</option>
+                    <option value="./img/meteorito.jpg">Meteorito</option>
+                    <option value="./img/neptuno.jpg">Neptuno</option>
+                    <option value="./img/urano.jpg">Urano</option>
+                    <option value="./img/pluton.jpg">Pluton</option>
+                    <option value="./img/nave.jpg">Nave Espacial</option>
+                </select>
+            </aside>
+            <main class="gallery">
+                <img id="planeta" src="./img/nave.jpg" alt="foto">
+            </main>
+    </form>
+    </div>
+    <hr>
+    <script>
+        function mostrarAstros() {
+
+            let astroSeleccionado = document.getElementById("astros").value;
+            console.log(astroSeleccionado);
+            document.getElementById("planeta").src = astroSeleccionado;
+        }
+        function acercaDeSistema() {
+        alert("Programado por Yolanda 2025");
+        }
+
+        function terminar() {
+            self.close();
+            //ya no se usará por causa de un virus
+        }
+    </script>
+</body>
+
+</html>

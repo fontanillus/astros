@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: whitesmoke;
+    width: 60%;
+    margin: 0 auto;
+    color: black;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin-right: 10px;
+    gap: 15px;
+}
+
+h1 {
+    color: fuchsia;
+    text-align: left;
+}
+
+form {
+    margin: 0 auto;
+    font-size: medium;
+    display: flex;
+    margin-right: 50%;
+
+}
+
+aside {
+    display: flex;
+    background-color: whitesmoke;
+    width: 50%;
+    height: 30vh;
+    font-size: 10px;
+  }
+
+
+button {
+    font-size: medium;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.espacio {
+    font-size: medium;
+}
+
+
+#astros {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    object-fit: cover;
+    gap: 60px;
+}
+
+.gallery img {
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#astros:hover {
+    cursor: hand;
+    cursor: pointer;
+}
